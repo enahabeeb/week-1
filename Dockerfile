@@ -6,6 +6,7 @@ WORKDIR /usr/src/app
 
 # Copy the Java application source file to the container
 COPY app.java .
+RUN javac app.java
 
 # Default command to run your application (modify based on your needs)
-CMD ["java", "app.java"]
+CMD ["java", "app"]
